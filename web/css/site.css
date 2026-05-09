@@ -1,0 +1,47 @@
+/* Custom styles for Yii2 GridView and widgets - compatible with Tailwind */
+.not-set {
+    color: #dc2626;
+    font-style: italic;
+}
+
+/* GridView sorting icons */
+a.asc:after, a.desc:after {
+    content: '';
+    left: 3px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: solid 5px transparent;
+    margin: 4px 4px 2px 4px;
+    background: transparent;
+}
+
+a.asc:after {
+    border-bottom: solid 7px #374151;
+    border-top-width: 0;
+}
+
+a.desc:after {
+    border-top: solid 7px #374151;
+    border-bottom-width: 0;
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #6b7280;
+}
+
+/* Error summary styling compatible with Tailwind */
+.error-summary {
+    color: #dc2626;
+    background: #fef2f2;
+    border-left: 4px solid #f87171;
+    padding: 1rem 1.25rem;
+    margin: 0 0 1rem 0;
+    border-radius: 0.5rem;
+}
